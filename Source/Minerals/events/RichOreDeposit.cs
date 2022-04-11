@@ -54,7 +54,7 @@ namespace Minerals
             // Find tile to spawn world destination
             IntRange targetDistanceRange = new IntRange(3, 25);
             int targetTile;
-            if (!TileFinder.TryFindNewSiteTile(out targetTile, targetDistanceRange.min, targetDistanceRange.max, false, true, -1))
+            if (!TileFinder.TryFindNewSiteTile(out targetTile, targetDistanceRange.min, targetDistanceRange.max, false, TileFinderMode.Near, -1, true))
             {
                 return false;
             }
@@ -121,6 +121,7 @@ namespace Minerals
         {
         }
 
+        [Obsolete]
         public override void Tick()
         {
             base.Tick();

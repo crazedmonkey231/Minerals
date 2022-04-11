@@ -3,9 +3,6 @@ using System;
 using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-
-using UnityEngine;   // Always needed
 using RimWorld;      // RimWorld specific functions 
 using Verse;         // RimWorld universal objects 
 using RimWorld.Planet;
@@ -101,7 +98,7 @@ namespace Minerals
             mapBuilder.initIce(map);
         }
 
-        [HarmonyPatch(typeof(SK.SkyfallerUtil))]
+        [HarmonyPatch(typeof(SkyfallerMaker))]
         [HarmonyPatch("SpawnSkyfaller")]
         [HarmonyPatch(new Type[] {typeof(ThingDef), typeof(IEnumerable<Thing>), typeof(IntVec3), typeof(Map) })]
         static class ImpactPatch
