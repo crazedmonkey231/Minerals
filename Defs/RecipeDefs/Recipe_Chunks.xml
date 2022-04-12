@@ -1,15 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<RecipeDef Name="SK_MakeStoneBlocksBase" Abstract="True">
+		<jobString>Cutting stone blocks from chunk.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<workAmount>1600</workAmount>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+                <workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.3</workSkillLearnFactor>		
+	</RecipeDef>
 
+	<RecipeDef ParentName="SK_MakeStoneBlocksBase">
+		<defName>Make_StoneBlocksAny</defName>
+		<label>cut stone blocks</label>
+		<description>Cuts a stone chunk into usable stone blocks.</description>
+		<jobString>Cutting stone chunk into blocks.</jobString>
+		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+	</RecipeDef>
+	
   <RecipeDef ParentName="SK_MakeStoneBlocksBase">
     <defName>ProcessBlocklessChunks</defName>
     <label>crush soft stone chunks</label>
     <description>Crush soft stone chunks.</description>
     <jobString>crushing soft stone chunks.</jobString>
     <recipeUsers Inherit="False">
-      <li>TableStonecutterNeolithic</li>
       <li>TableStonecutter</li>
-      <li>TableMachining</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -42,7 +84,6 @@
     <jobString>Cutting hard stone chunks into blocks.</jobString>
     <recipeUsers Inherit="False">
       <li>TableStonecutter</li>
-      <li>TableMachining</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -75,7 +116,7 @@
     <description>cut ultra hard stone chunks into blocks.</description>
     <jobString>Cutting ultra hard stone chunks into blocks.</jobString>
     <recipeUsers Inherit="False">
-      <li>TableMachining</li>
+      <li>TableStonecutter</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -100,6 +141,5 @@
     <workSkillLearnFactor>0.6</workSkillLearnFactor>
     <researchPrerequisite>ZF_HardStoneCuttingII</researchPrerequisite>
   </RecipeDef>
-
 
 </Defs>
