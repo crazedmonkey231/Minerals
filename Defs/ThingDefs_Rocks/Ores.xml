@@ -1,1232 +1,1193 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  
 
-  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredOreSteel</defName>
-    <label>Weathered Steel Ore Deposits</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(155,133,107)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>2800</MaxHitPoints>
-    </statBases>
-    <description>Deposits of Steel Ore.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Steel</ResourceDefName>
-        <DropProbability>10</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableSteel</li>
-    </ThingsToReplace>
-  </ThingDef>
-
-
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidOreSteel</defName>
-    <label>Solid Steel Ore Deposits</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(155,133,107)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>2800</MaxHitPoints>
-    </statBases>
-    <description>Deposits of Steel Ore.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Steel</ResourceDefName>
-        <DropProbability>11</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableSteel</li>
-      <li>HewnOreSteel</li>
-    </ThingsToReplace>
-  </ThingDef>
-
-
-  <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnOreSteel</defName>
-    <label>Hewn Steel Ore Deposits</label>
-    <description>Deposits of Steel Ore.</description>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(155,133,107)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>2800</MaxHitPoints>
-    </statBases>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Steel</ResourceDefName>
-        <DropProbability>13</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableSteel</li>
-    </ThingsToReplace>
-  </ThingDef>
-  
-  
-  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredOreSilver</defName>
-    <label>Weathered Silver Ore Deposits</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(147,144,134)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>3500</MaxHitPoints>
-    </statBases>
-    <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
-
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>5</DropProbability>
-        <CountPerDrop>50</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-
-    <ThingsToReplace>
-      <li>MineableSilver</li>
-    </ThingsToReplace>
-    
-  </ThingDef>
-
-
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidOreSilver</defName>
-    <label>Solid Silver Ore Deposits</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(147,144,134)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>4000</MaxHitPoints>
-    </statBases>
-    <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>50</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableSilver</li>
-      <li>HewnOreSilver</li>
-    </ThingsToReplace>
-  </ThingDef>
-
-  <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnOreSilver</defName>
-    <label>Hewn Silver Ore Deposits</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(147,144,134)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>5000</MaxHitPoints>
-    </statBases>
-    <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>60</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableSilver</li>
-    </ThingsToReplace>
-  </ThingDef>
-  
-  
-  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredOreGold</defName>
-    <label>Weathered Gold Ore Deposits</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(187,173,25)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>4500</MaxHitPoints>
-    </statBases>
-    <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
-
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>30</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>5</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-
-    <ThingsToReplace>
-      <li>MineableGold</li>
-    </ThingsToReplace>
-    
-  </ThingDef>
-
-
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidOreGold</defName>
-    <label>Solid Gold Ore Deposits</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(187,173,25)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>5000</MaxHitPoints>
-    </statBases>
-    <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
-
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>30</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-
-    <ThingsToReplace>
-      <li>MineableGold</li>
-      <li>HewnOreGold</li>
-    </ThingsToReplace>
-    
-  </ThingDef>
-
-  <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnOreGold</defName>
-    <label>Hewn Gold Ore Deposits</label>
-    <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(187,173,25)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>3200</MaxHitPoints>
-    </statBases>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>30</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>7</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableGold</li>
-    </ThingsToReplace>
-  </ThingDef>
-  
-  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredOreJade</defName>
-    <label>Weathered Jade Deposits</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(30,173,25)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>5000</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of jade.</description>
-
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Jade</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>1</DropProbability>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableJade</li>
-    </ThingsToReplace>
-  </ThingDef>
-
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidOreJade</defName>
-    <label>Solid Jade Deposits</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(30,173,25)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>7000</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of jade.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Jade</ResourceDefName>
-        <DropProbability>9</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>1</DropProbability>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableJade</li>
-      <li>HewnOreJade</li>
-    </ThingsToReplace>
-  </ThingDef>
-  
-  <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnOreJade</defName>
-    <label>Hewn Jade Ore Deposits</label>
-    <description>Rock containing bits of jade.</description>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(30,173,25)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>10000</MaxHitPoints>
-    </statBases>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Jade</ResourceDefName>
-        <DropProbability>10</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>2</DropProbability>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableJade</li>
-    </ThingsToReplace>
-  </ThingDef>
-
-
-  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredOreGlowstone</defName>
-    <label>Weathered Glowstone Deposit</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/QuartzOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(255,255,255)</colorTwo>
-    </graphicData>
-    <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
-    <statBases>
-		  <Beauty>20</Beauty>
-      <MaxHitPoints>3000</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of a strange glowing gem.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Glowstone</ResourceDefName>
-        <DropProbability>4</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableGlowstone</li>
-    </ThingsToReplace>
-    <comps>
-		  <li Class="CompProperties_Glower">
-			  <glowRadius>5</glowRadius>
-			  <glowColor>(255,255,255,0)</glowColor>
-		  </li>
-	  </comps>
-  </ThingDef>
-
-
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidOreGlowstone</defName>
-    <label>Solid Glowstone Deposit</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/QuartzOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(255,255,255)</colorTwo>
-    </graphicData>
-    <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
-    <statBases>
-	  	<Beauty>20</Beauty>
-      <MaxHitPoints>4000</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of a strange glowing gem.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Glowstone</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableGlowstone</li>
-      <li>HewnOreGlowstone</li>
-    </ThingsToReplace>
-    <comps>
-		  <li Class="CompProperties_Glower">
-			  <glowRadius>6</glowRadius>
-			  <glowColor>(255,255,255,0)</glowColor>
-		  </li>
-	  </comps>
-  </ThingDef>
-
-
-  <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnOreGlowstone</defName>
-    <label>Hewn Glowstone Ore Deposits</label>
-    <description>Rock containing bits of a strange glowing gem.</description>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(255,255,255)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>5000</MaxHitPoints>
-    </statBases>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Glowstone</ResourceDefName>
-        <DropProbability>7</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableGlowstone</li>
-    </ThingsToReplace>
-    <comps>
-		  <li Class="CompProperties_Glower">
-			  <glowRadius>6</glowRadius>
-			  <glowColor>(255,255,255,0)</glowColor>
-		  </li>
-	  </comps>
-  </ThingDef>
-  
-
-  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredOreColdstone</defName>
-    <label>Weathered Coldstone Deposit</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/QuartzOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(190,210,250)</colorTwo>
-    </graphicData>
-    <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
-    <statBases>
-		  <Beauty>2</Beauty>
-      <MaxHitPoints>3000</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of a strangely cold gem.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Coldstone</ResourceDefName>
-        <DropProbability>4</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableColdstone</li>
-    </ThingsToReplace>
-  	<comps>
-      <li Class="CompProperties_HeatPusher">
-        <heatPerSecond>-10</heatPerSecond>
-        <heatPushMinTemperature>5</heatPushMinTemperature>
-      </li>
-  		<li Class="CompProperties_Glower">
-  			<glowRadius>3</glowRadius>
-  			<glowColor>(150,200,255, 0)</glowColor>
-  		</li>
-  	</comps>
-  </ThingDef>
-
-
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidOreColdstone</defName>
-    <label>Solid Coldstone Deposit</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/QuartzOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(220,225,255)</colorTwo>
-    </graphicData>
-    <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
-    <statBases>
-	  	<Beauty>2</Beauty>
-      <MaxHitPoints>4000</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of a strangely cold gem.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Coldstone</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableColdstone</li>
-      <li>HewnOreColdstone</li>
-    </ThingsToReplace>
-    <comps>
-      <li Class="CompProperties_HeatPusher">
-        <heatPerSecond>-10</heatPerSecond>
-        <heatPushMinTemperature>5</heatPushMinTemperature>
-      </li>
-    	<li Class="CompProperties_Glower">
-    		<glowRadius>5</glowRadius>
-  			<glowColor>(150,200,255, 0)</glowColor>
-    	</li>
-    </comps>
-  </ThingDef>
-
-
-  <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnOreColdstone</defName>
-    <label>Hewn Coldstone Ore Deposits</label>
-    <description>Rock containing bits of a strangely cold gem.</description>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(220,225,255)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>5000</MaxHitPoints>
-    </statBases>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Coldstone</ResourceDefName>
-        <DropProbability>7</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableColdstone</li>
-    </ThingsToReplace>
-    <comps>
-      <li Class="CompProperties_HeatPusher">
-        <heatPerSecond>-10</heatPerSecond>
-        <heatPushMinTemperature>5</heatPushMinTemperature>
-      </li>
-    	<li Class="CompProperties_Glower">
-    		<glowRadius>5</glowRadius>
-  			<glowColor>(150,200,255, 0)</glowColor>
-    	</li>
-    </comps>
-  </ThingDef>
-  
-
-  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredOreSalt</defName>
-    <label>Weathered Salt Deposit</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Rock/WeatheredSandstone</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(230,230,230)</color>
-    </graphicData>
-    <uiIconPath>Things/Rock/WeatheredSandstone/WeatheredSandstoneA</uiIconPath>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>RoughGem</mineableThing>
-      <mineableDropChance>0.01</mineableDropChance>
-      <mineableYield>1</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
-    <statBases>
-		  <Beauty>2</Beauty>
-      <MaxHitPoints>800</MaxHitPoints>
-    </statBases>
-    <description>Salt compacted over time..</description>
-
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Salt</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-
-    <ThingsToReplace>
-      <li>MineableSalt</li>
-    </ThingsToReplace>
-
-    <!-- If the primary color is based on the stone below it -->
-    <coloredByTerrain>false</coloredByTerrain>
-  </ThingDef>
-
-
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidOreSalt</defName>
-    <label>Solid Salt Deposit</label>
-    <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(230,230,230)</color>
-    </graphicData>
-    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
-    <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
-    </statBases>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>RoughGem</mineableThing>
-      <mineableDropChance>0.01</mineableDropChance>
-      <mineableYield>1</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
-    <description>Salt compacted over time.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Salt</ResourceDefName>
-        <DropProbability>10</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableSalt</li>
-      <li>HewnOreSalt</li>
-    </ThingsToReplace>
-    <!-- If the primary color is based on the stone below it -->
-    <coloredByTerrain>false</coloredByTerrain>
-  </ThingDef>
-
-  
-  <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnOreSalt</defName>
-    <label>Hewn Salt Deposits</label>
-    <description>Salt compacted over time.</description>
-    <graphicData>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Rock/HewnRockWall</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(230,230,230)</color>
-    </graphicData>
-    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
-    <statBases>
-      <MaxHitPoints>1500</MaxHitPoints>
-    </statBases>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>RoughGem</mineableThing>
-      <mineableDropChance>0.01</mineableDropChance>
-      <mineableYield>1</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Salt</ResourceDefName>
-        <DropProbability>12</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableSalt</li>
-    </ThingsToReplace>
-    <!-- If the primary color is based on the stone below it -->
-    <coloredByTerrain>false</coloredByTerrain>
-  </ThingDef>
-  
-
-  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredOreTech</defName>
-    <label>Weathered compacted machinery</label>
-    <graphicData>
-      <texPath>Things/Ore/CompactedTech</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-    </graphicData>
-    <uiIconPath>Things/Ore/CompactedTech/CompactedTechA</uiIconPath>
-    <statBases>
-		  <Beauty>-4</Beauty>
-      <MaxHitPoints>1800</MaxHitPoints>
-    </statBases>
-    <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
-    <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>ComponentIndustrial</mineableThing>
-      <mineableYield>2</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>0.8</DropProbability>
-		<CountPerDrop>1</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableComponentsIndustrial</li>
-    </ThingsToReplace>
-    <!-- If the primary color is based on the stone below it -->
-    <coloredByTerrain>false</coloredByTerrain>
-  </ThingDef>
-
-
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidOreTech</defName>
-    <label>Solid compacted machinery</label>
-    <graphicData>
-      <texPath>Things/Ore/SolidOreTech</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-    </graphicData>
-    <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
-    <statBases>
-      <MaxHitPoints>2500</MaxHitPoints>
-    </statBases>
-    <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
-     <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>ComponentIndustrial</mineableThing>
-      <mineableYield>2</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>1</DropProbability>
-		<CountPerDrop>2</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>ComponentSpacer</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-		<CountPerDrop>1</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableComponentsIndustrial</li>
-      <li>HewnOreTech</li>
-    </ThingsToReplace>
-    <!-- If the primary color is based on the stone below it -->
-    <coloredByTerrain>false</coloredByTerrain>
-  </ThingDef>
-
-
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
-    <defName>HewnOreTech</defName>
-    <label>Hewn compacted machinery</label>
-    <graphicData>
-      <texPath>Things/Ore/SolidOreTech</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-    </graphicData>
-    <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
-    <statBases>
-      <MaxHitPoints>3000</MaxHitPoints>
-    </statBases>
-    <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
-     <building>
-      <isResourceRock>true</isResourceRock>
-      <mineableThing>ComponentIndustrial</mineableThing>
-      <mineableYield>3</mineableYield>
-      <isInert>true</isInert>
-      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <claimable>false</claimable>
-      <deconstructible>false</deconstructible>
-      <isEdifice>true</isEdifice>
-    </building>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>1.5</DropProbability>
-		<CountPerDrop>3</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>ComponentSpacer</ResourceDefName>
-        <DropProbability>0.08</DropProbability>
-		<CountPerDrop>1</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableComponentsIndustrial</li>
-    </ThingsToReplace>
-    <!-- If the primary color is based on the stone below it -->
-    <coloredByTerrain>false</coloredByTerrain>
-    <!-- Tags which determine how some options behave  -->
-    <tags>
-      <li>rock</li>
-      <li>wall</li>
-      <li>hewn</li>
-    </tags>
-    <!-- Roof requirements -->
-    <mustBeUnderRoof>false</mustBeUnderRoof>
-    <mustBeUnderThickRoof>true</mustBeUnderThickRoof>
-    <mustBeUnroofed>false</mustBeUnroofed>
-    <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
-  </ThingDef>
-
-
-  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredOreAmber</defName>
-    <label>Weathered Amber Deposit</label>
-    <graphicData>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(230, 110, 10)</colorTwo>
-    </graphicData>
-    <statBases>
-		  <Beauty>2</Beauty>
-      <MaxHitPoints>1000</MaxHitPoints>
-    </statBases>
-    <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>1</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>4</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>SmallFossil</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MinableAmber</li>
-    </ThingsToReplace>
-  </ThingDef>
-
-
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidOreAmber</defName>
-    <label>Solid Amber Deposit</label>
-    <graphicData>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(230, 110, 10)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>1600</MaxHitPoints>
-    </statBases>
-    <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>3</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MinableAmber</li>
-      <li>HewnOreAmber</li>
-    </ThingsToReplace>
-  </ThingDef>
-  
-
-  <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnOreAmber</defName>
-    <label>Hewn Amber Deposits</label>
-    <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(230, 110, 10)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>2000</MaxHitPoints>
-    </statBases>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>3</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>7</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MinableAmber</li>
-    </ThingsToReplace>
-  </ThingDef>
-  
-
-  <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>WeatheredOreUranium</defName>
-    <label>Weathered Uranium Deposits</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(70,70,70)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>3000</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of uranium.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Uranium</ResourceDefName>
-        <DropProbability>7</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableUranium</li>
-    </ThingsToReplace>
-  </ThingDef>
-
-
-  <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
-    <defName>SolidOreUranium</defName>
-    <label>Solid Uranium Deposits</label>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(70,70,70)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>5000</MaxHitPoints>
-    </statBases>
-    <description>Rock containing bits of uranium.</description>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Uranium</ResourceDefName>
-        <DropProbability>9</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableUranium</li>
-      <li>HewnOreUranium</li>
-    </ThingsToReplace>
-  </ThingDef>
-
-
-  <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
-    <defName>HewnOreUranium</defName>
-    <label>Hewn Uranium Deposits</label>
-    <description>Rock containing bits of uranium.</description>
-    <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <color>(105,95,97)</color>
-      <colorTwo>(70,70,70)</colorTwo>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>6000</MaxHitPoints>
-    </statBases>
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>Uranium</ResourceDefName>
-        <DropProbability>10</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <ThingsToReplace>
-      <li>MineableUranium</li>
-    </ThingsToReplace>
-  </ThingDef>
-  
-
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>WeatheredOreSteel</defName>
+        <label>Weathered Steel Ore Deposits</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(155,133,107)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>2800</MaxHitPoints>
+        </statBases>
+        <description>Deposits of Steel Ore.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Steel</ResourceDefName>
+                <DropProbability>10</DropProbability>
+                <CountPerDrop>5</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableSteel</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
+        <defName>SolidOreSteel</defName>
+        <label>Solid Steel Ore Deposits</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(155,133,107)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>2800</MaxHitPoints>
+        </statBases>
+        <description>Deposits of Steel Ore.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Steel</ResourceDefName>
+                <DropProbability>11</DropProbability>
+                <CountPerDrop>5</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableSteel</li>
+            <li>HewnOreSteel</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>HewnOreSteel</defName>
+        <label>Hewn Steel Ore Deposits</label>
+        <description>Deposits of Steel Ore.</description>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <texPath>Things/Ore/HewnOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(155,133,107)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>2800</MaxHitPoints>
+        </statBases>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Steel</ResourceDefName>
+                <DropProbability>13</DropProbability>
+                <CountPerDrop>5</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableSteel</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>WeatheredOreSilver</defName>
+        <label>Weathered Silver Ore Deposits</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(147,144,134)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>3500</MaxHitPoints>
+        </statBases>
+        <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Gold</ResourceDefName>
+                <DropProbability>0.2</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>Silver</ResourceDefName>
+                <DropProbability>5</DropProbability>
+                <CountPerDrop>50</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableSilver</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
+        <defName>SolidOreSilver</defName>
+        <label>Solid Silver Ore Deposits</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(147,144,134)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>4000</MaxHitPoints>
+        </statBases>
+        <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Gold</ResourceDefName>
+                <DropProbability>0.2</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>Silver</ResourceDefName>
+                <DropProbability>6</DropProbability>
+                <CountPerDrop>50</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableSilver</li>
+            <li>HewnOreSilver</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>HewnOreSilver</defName>
+        <label>Hewn Silver Ore Deposits</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <texPath>Things/Ore/HewnOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(147,144,134)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>5000</MaxHitPoints>
+        </statBases>
+        <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Gold</ResourceDefName>
+                <DropProbability>0.2</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>Silver</ResourceDefName>
+                <DropProbability>6</DropProbability>
+                <CountPerDrop>60</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableSilver</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>WeatheredOreGold</defName>
+        <label>Weathered Gold Ore Deposits</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(187,173,25)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>4500</MaxHitPoints>
+        </statBases>
+        <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Silver</ResourceDefName>
+                <DropProbability>0.2</DropProbability>
+                <CountPerDrop>30</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>Gold</ResourceDefName>
+                <DropProbability>5</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableGold</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
+        <defName>SolidOreGold</defName>
+        <label>Solid Gold Ore Deposits</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(187,173,25)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>5000</MaxHitPoints>
+        </statBases>
+        <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Silver</ResourceDefName>
+                <DropProbability>0.2</DropProbability>
+                <CountPerDrop>30</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>Gold</ResourceDefName>
+                <DropProbability>6</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableGold</li>
+            <li>HewnOreGold</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>HewnOreGold</defName>
+        <label>Hewn Gold Ore Deposits</label>
+        <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <texPath>Things/Ore/HewnOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(187,173,25)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>3200</MaxHitPoints>
+        </statBases>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Silver</ResourceDefName>
+                <DropProbability>0.2</DropProbability>
+                <CountPerDrop>30</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>Gold</ResourceDefName>
+                <DropProbability>7</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableGold</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>WeatheredOreJade</defName>
+        <label>Weathered Jade Deposits</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(30,173,25)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>5000</MaxHitPoints>
+        </statBases>
+        <description>Rock containing bits of jade.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Jade</ResourceDefName>
+                <DropProbability>6</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>RoughGem</ResourceDefName>
+                <DropProbability>1</DropProbability>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableJade</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
+        <defName>SolidOreJade</defName>
+        <label>Solid Jade Deposits</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(30,173,25)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>7000</MaxHitPoints>
+        </statBases>
+        <description>Rock containing bits of jade.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Jade</ResourceDefName>
+                <DropProbability>9</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>RoughGem</ResourceDefName>
+                <DropProbability>1</DropProbability>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableJade</li>
+            <li>HewnOreJade</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>HewnOreJade</defName>
+        <label>Hewn Jade Ore Deposits</label>
+        <description>Rock containing bits of jade.</description>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <texPath>Things/Ore/HewnOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(30,173,25)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>10000</MaxHitPoints>
+        </statBases>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Jade</ResourceDefName>
+                <DropProbability>10</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>RoughGem</ResourceDefName>
+                <DropProbability>2</DropProbability>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableJade</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>WeatheredOreGlowstone</defName>
+        <label>Weathered Glowstone Deposit</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/QuartzOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(255,255,255)</colorTwo>
+        </graphicData>
+        <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
+        <statBases>
+            <Beauty>20</Beauty>
+            <MaxHitPoints>3000</MaxHitPoints>
+        </statBases>
+        <description>Rock containing bits of a strange glowing gem.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Glowstone</ResourceDefName>
+                <DropProbability>4</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableGlowstone</li>
+        </ThingsToReplace>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(255,255,255,0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+	
+    <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
+        <defName>SolidOreGlowstone</defName>
+        <label>Solid Glowstone Deposit</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/QuartzOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(255,255,255)</colorTwo>
+        </graphicData>
+        <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
+        <statBases>
+            <Beauty>20</Beauty>
+            <MaxHitPoints>4000</MaxHitPoints>
+        </statBases>
+        <description>Rock containing bits of a strange glowing gem.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Glowstone</ResourceDefName>
+                <DropProbability>6</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableGlowstone</li>
+            <li>HewnOreGlowstone</li>
+        </ThingsToReplace>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>6</glowRadius>
+                <glowColor>(255,255,255,0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+	
+    <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>HewnOreGlowstone</defName>
+        <label>Hewn Glowstone Ore Deposits</label>
+        <description>Rock containing bits of a strange glowing gem.</description>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <texPath>Things/Ore/HewnOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(255,255,255)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>5000</MaxHitPoints>
+        </statBases>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Glowstone</ResourceDefName>
+                <DropProbability>7</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableGlowstone</li>
+        </ThingsToReplace>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>6</glowRadius>
+                <glowColor>(255,255,255,0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+	
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>WeatheredOreColdstone</defName>
+        <label>Weathered Coldstone Deposit</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/QuartzOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(190,210,250)</colorTwo>
+        </graphicData>
+        <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
+        <statBases>
+            <Beauty>2</Beauty>
+            <MaxHitPoints>3000</MaxHitPoints>
+        </statBases>
+        <description>Rock containing bits of a strangely cold gem.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Coldstone</ResourceDefName>
+                <DropProbability>4</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableColdstone</li>
+        </ThingsToReplace>
+        <comps>
+            <li Class="CompProperties_HeatPusher">
+                <heatPerSecond>-10</heatPerSecond>
+                <heatPushMinTemperature>5</heatPushMinTemperature>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(150,200,255, 0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+	
+    <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
+        <defName>SolidOreColdstone</defName>
+        <label>Solid Coldstone Deposit</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/QuartzOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(220,225,255)</colorTwo>
+        </graphicData>
+        <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
+        <statBases>
+            <Beauty>2</Beauty>
+            <MaxHitPoints>4000</MaxHitPoints>
+        </statBases>
+        <description>Rock containing bits of a strangely cold gem.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Coldstone</ResourceDefName>
+                <DropProbability>6</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableColdstone</li>
+            <li>HewnOreColdstone</li>
+        </ThingsToReplace>
+        <comps>
+            <li Class="CompProperties_HeatPusher">
+                <heatPerSecond>-10</heatPerSecond>
+                <heatPushMinTemperature>5</heatPushMinTemperature>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(150,200,255, 0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+	
+    <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>HewnOreColdstone</defName>
+        <label>Hewn Coldstone Ore Deposits</label>
+        <description>Rock containing bits of a strangely cold gem.</description>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <texPath>Things/Ore/HewnOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(220,225,255)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>5000</MaxHitPoints>
+        </statBases>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Coldstone</ResourceDefName>
+                <DropProbability>7</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableColdstone</li>
+        </ThingsToReplace>
+        <comps>
+            <li Class="CompProperties_HeatPusher">
+                <heatPerSecond>-10</heatPerSecond>
+                <heatPushMinTemperature>5</heatPushMinTemperature>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(150,200,255, 0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+	
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>WeatheredOreSalt</defName>
+        <label>Weathered Salt Deposit</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Rock/WeatheredSandstone</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(230,230,230)</color>
+        </graphicData>
+        <uiIconPath>Things/Rock/WeatheredSandstone/WeatheredSandstoneA</uiIconPath>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>RoughGem</mineableThing>
+            <mineableDropChance>0.01</mineableDropChance>
+            <mineableYield>1</mineableYield>
+            <isInert>true</isInert>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+            <isNaturalRock>true</isNaturalRock>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+            <isEdifice>true</isEdifice>
+        </building>
+        <statBases>
+            <Beauty>2</Beauty>
+            <MaxHitPoints>800</MaxHitPoints>
+        </statBases>
+        <description>Salt compacted over time..</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Salt</ResourceDefName>
+                <DropProbability>6</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableSalt</li>
+        </ThingsToReplace>
+        <!-- If the primary color is based on the stone below it -->
+        <coloredByTerrain>false</coloredByTerrain>
+    </ThingDef>
+	
+    <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
+        <defName>SolidOreSalt</defName>
+        <label>Solid Salt Deposit</label>
+        <graphicData>
+            <texPath>Things/Rock/WeatheredBasalt</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(230,230,230)</color>
+        </graphicData>
+        <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+        <statBases>
+            <MaxHitPoints>1000</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>RoughGem</mineableThing>
+            <mineableDropChance>0.01</mineableDropChance>
+            <mineableYield>1</mineableYield>
+            <isInert>true</isInert>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+            <isNaturalRock>true</isNaturalRock>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+            <isEdifice>true</isEdifice>
+        </building>
+        <description>Salt compacted over time.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Salt</ResourceDefName>
+                <DropProbability>10</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableSalt</li>
+            <li>HewnOreSalt</li>
+        </ThingsToReplace>
+        <!-- If the primary color is based on the stone below it -->
+        <coloredByTerrain>false</coloredByTerrain>
+    </ThingDef>
+	
+    <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>HewnOreSalt</defName>
+        <label>Hewn Salt Deposits</label>
+        <description>Salt compacted over time.</description>
+        <graphicData>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <texPath>Things/Rock/HewnRockWall</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(230,230,230)</color>
+        </graphicData>
+        <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+        <statBases>
+            <MaxHitPoints>1500</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>RoughGem</mineableThing>
+            <mineableDropChance>0.01</mineableDropChance>
+            <mineableYield>1</mineableYield>
+            <isInert>true</isInert>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+            <isNaturalRock>true</isNaturalRock>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+            <isEdifice>true</isEdifice>
+        </building>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Salt</ResourceDefName>
+                <DropProbability>12</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableSalt</li>
+        </ThingsToReplace>
+        <!-- If the primary color is based on the stone below it -->
+        <coloredByTerrain>false</coloredByTerrain>
+    </ThingDef>
+	
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>WeatheredOreTech</defName>
+        <label>Weathered compacted machinery</label>
+        <graphicData>
+            <texPath>Things/Ore/CompactedTech</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Ore/CompactedTech/CompactedTechA</uiIconPath>
+        <statBases>
+            <Beauty>-4</Beauty>
+            <MaxHitPoints>1800</MaxHitPoints>
+        </statBases>
+        <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>ComponentIndustrial</mineableThing>
+            <mineableYield>2</mineableYield>
+            <isInert>true</isInert>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+            <isNaturalRock>true</isNaturalRock>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+            <isEdifice>true</isEdifice>
+        </building>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Plasteel</ResourceDefName>
+                <DropProbability>1</DropProbability>
+                <CountPerDrop>5</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>ComponentIndustrial</ResourceDefName>
+                <DropProbability>0.8</DropProbability>
+                <CountPerDrop>1</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableComponentsIndustrial</li>
+        </ThingsToReplace>
+        <!-- If the primary color is based on the stone below it -->
+        <coloredByTerrain>false</coloredByTerrain>
+    </ThingDef>
+	
+    <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
+        <defName>SolidOreTech</defName>
+        <label>Solid compacted machinery</label>
+        <graphicData>
+            <texPath>Things/Ore/SolidOreTech</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
+        <statBases>
+            <MaxHitPoints>2500</MaxHitPoints>
+        </statBases>
+        <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>ComponentIndustrial</mineableThing>
+            <mineableYield>2</mineableYield>
+            <isInert>true</isInert>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+            <isNaturalRock>true</isNaturalRock>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+            <isEdifice>true</isEdifice>
+        </building>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Plasteel</ResourceDefName>
+                <DropProbability>2</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>ComponentIndustrial</ResourceDefName>
+                <DropProbability>1</DropProbability>
+                <CountPerDrop>2</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>ComponentSpacer</ResourceDefName>
+                <DropProbability>0.05</DropProbability>
+                <CountPerDrop>1</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableComponentsIndustrial</li>
+            <li>HewnOreTech</li>
+        </ThingsToReplace>
+        <!-- If the primary color is based on the stone below it -->
+        <coloredByTerrain>false</coloredByTerrain>
+    </ThingDef>
+	
+    <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
+        <defName>HewnOreTech</defName>
+        <label>Hewn compacted machinery</label>
+        <graphicData>
+            <texPath>Things/Ore/SolidOreTech</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
+        <statBases>
+            <MaxHitPoints>3000</MaxHitPoints>
+        </statBases>
+        <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>ComponentIndustrial</mineableThing>
+            <mineableYield>3</mineableYield>
+            <isInert>true</isInert>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+            <isNaturalRock>true</isNaturalRock>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+            <isEdifice>true</isEdifice>
+        </building>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Plasteel</ResourceDefName>
+                <DropProbability>3</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>ComponentIndustrial</ResourceDefName>
+                <DropProbability>1.5</DropProbability>
+                <CountPerDrop>3</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>ComponentSpacer</ResourceDefName>
+                <DropProbability>0.08</DropProbability>
+                <CountPerDrop>1</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableComponentsIndustrial</li>
+        </ThingsToReplace>
+        <!-- If the primary color is based on the stone below it -->
+        <coloredByTerrain>false</coloredByTerrain>
+        <!-- Tags which determine how some options behave  -->
+        <tags>
+            <li>rock</li>
+            <li>wall</li>
+            <li>hewn</li>
+        </tags>
+        <!-- Roof requirements -->
+        <mustBeUnderRoof>false</mustBeUnderRoof>
+        <mustBeUnderThickRoof>true</mustBeUnderThickRoof>
+        <mustBeUnroofed>false</mustBeUnroofed>
+        <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
+    </ThingDef>
+	
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>WeatheredOreAmber</defName>
+        <label>Weathered Amber Deposit</label>
+        <graphicData>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(230, 110, 10)</colorTwo>
+        </graphicData>
+        <statBases>
+            <Beauty>2</Beauty>
+            <MaxHitPoints>1000</MaxHitPoints>
+        </statBases>
+        <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>RoughGem</ResourceDefName>
+                <DropProbability>1</DropProbability>
+            </li>
+            <li>
+                <ResourceDefName>Amber</ResourceDefName>
+                <DropProbability>4</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>SmallFossil</ResourceDefName>
+                <DropProbability>0.3</DropProbability>
+                <CountPerDrop>1</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MinableAmber</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
+        <defName>SolidOreAmber</defName>
+        <label>Solid Amber Deposit</label>
+        <graphicData>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(230, 110, 10)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>1600</MaxHitPoints>
+        </statBases>
+        <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>RoughGem</ResourceDefName>
+                <DropProbability>3</DropProbability>
+            </li>
+            <li>
+                <ResourceDefName>Amber</ResourceDefName>
+                <DropProbability>6</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MinableAmber</li>
+            <li>HewnOreAmber</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>HewnOreAmber</defName>
+        <label>Hewn Amber Deposits</label>
+        <description>Ancient tree sap that has been preserved. Sometimes it has small creatures inside it. A soft resin that polishes up beautifully.</description>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <texPath>Things/Ore/HewnOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(230, 110, 10)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>2000</MaxHitPoints>
+        </statBases>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>RoughGem</ResourceDefName>
+                <DropProbability>3</DropProbability>
+            </li>
+            <li>
+                <ResourceDefName>Amber</ResourceDefName>
+                <DropProbability>7</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MinableAmber</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>WeatheredOreUranium</defName>
+        <label>Weathered Uranium Deposits</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(70,70,70)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>3000</MaxHitPoints>
+        </statBases>
+        <description>Rock containing bits of uranium.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Uranium</ResourceDefName>
+                <DropProbability>7</DropProbability>
+                <CountPerDrop>5</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableUranium</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock">
+        <defName>SolidOreUranium</defName>
+        <label>Solid Uranium Deposits</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(70,70,70)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>5000</MaxHitPoints>
+        </statBases>
+        <description>Rock containing bits of uranium.</description>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Uranium</ResourceDefName>
+                <DropProbability>9</DropProbability>
+                <CountPerDrop>5</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableUranium</li>
+            <li>HewnOreUranium</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
+    <ThingDef ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>HewnOreUranium</defName>
+        <label>Hewn Uranium Deposits</label>
+        <description>Rock containing bits of uranium.</description>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+            <texPath>Things/Ore/HewnOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(105,95,97)</color>
+            <colorTwo>(70,70,70)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>6000</MaxHitPoints>
+        </statBases>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Uranium</ResourceDefName>
+                <DropProbability>10</DropProbability>
+                <CountPerDrop>5</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>MineableUranium</li>
+        </ThingsToReplace>
+    </ThingDef>
+	
 </Defs>
