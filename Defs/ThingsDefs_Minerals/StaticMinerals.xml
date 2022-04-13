@@ -462,9 +462,9 @@
         <DropProbability>0.3</DropProbability>
       </li>
       <li>
-        <ResourceDefName>MagneticMaterial</ResourceDefName>
-        <DropProbability>4</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>Steel</ResourceDefName>
+        <DropProbability>3</DropProbability>
+        <CountPerDrop>3</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
@@ -522,11 +522,6 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>1.0</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>Tin</ResourceDefName>
-        <DropProbability>5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
@@ -803,11 +798,6 @@
       <li>
         <ResourceDefName>RoughGem</ResourceDefName>
         <DropProbability>2</DropProbability>
-      </li>
-      <li>
-        <ResourceDefName>Copper</ResourceDefName>
-        <DropProbability>5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->

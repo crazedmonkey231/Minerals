@@ -1,10 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using UnityEngine;   // Always needed
+﻿using UnityEngine;   // Always needed
 using RimWorld;      // RimWorld specific functions 
 using Verse;         // RimWorld universal objects 
 
@@ -13,6 +7,8 @@ namespace Minerals
 
     public class IncidentWorker_BlueSnow : IncidentWorker_MakeGameCondition
     {
+
+
 
         protected override bool CanFireNowSub(IncidentParms parms)
         {
@@ -98,7 +94,7 @@ namespace Minerals
             
     }
 
-
+    [StaticConstructorOnStartup]
     public class WeatherOverlay_BlueSnow : WeatherOverlay_SnowHard
     {
 
@@ -115,7 +111,7 @@ namespace Minerals
             this.worldPanDir2.Normalize();
             this.OverlayColor = new Color(0.3f,0.3f,1f);
         }
-
+        
         static WeatherOverlay_BlueSnow()
         {
             WeatherOverlay_BlueSnow.SnowOverlayWorld = MatLoader.LoadMat("Weather/SnowOverlayWorld", -1);

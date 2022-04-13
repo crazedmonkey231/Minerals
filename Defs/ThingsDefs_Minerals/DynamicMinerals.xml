@@ -482,9 +482,9 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Salt</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>8</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- If smaller than 1, it looks smaller in water -->
@@ -571,8 +571,8 @@
       <li>WastelandAsphalt</li>
       <li>SaltField</li>
       <li>Salted_Earth</li>
-   		<li>LavaRock_RoughHewn</li>
-   		<li>LavaRock_Rough</li>
+   	  <li>LavaRock_RoughHewn</li>
+   	  <li>LavaRock_Rough</li>
   	</allowedTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
@@ -628,9 +628,9 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Sulfur</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>8</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
