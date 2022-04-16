@@ -23,6 +23,9 @@
     </statBases>
     <stackLimit>20</stackLimit>
     <smallVolume>false</smallVolume>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
   </ThingDef>
   
 
