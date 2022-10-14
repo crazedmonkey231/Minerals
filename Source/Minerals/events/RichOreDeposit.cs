@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using UnityEngine;   // Always needed
-using RimWorld;      // RimWorld specific functions 
-using Verse;         // RimWorld universal objects 
+using UnityEngine;   
+using RimWorld;      
+using Verse;         
 using RimWorld.Planet;
 
-namespace Minerals
+namespace Minerals.Events
 {
 
     public class IncidentWorker_RichOreDeposit : IncidentWorker

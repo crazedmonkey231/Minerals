@@ -1,13 +1,13 @@
-﻿using UnityEngine;   // Always needed
-using RimWorld;      // RimWorld specific functions 
-using Verse;         // RimWorld universal objects 
+﻿using UnityEngine; 
+using RimWorld;      
+using Verse;         
+using Minerals.Core;
 
-namespace Minerals
+namespace Minerals.Events
 {
 
     public class IncidentWorker_BlueSnow : IncidentWorker_MakeGameCondition
     {
-
 
 
         protected override bool CanFireNowSub(IncidentParms parms)
@@ -17,7 +17,7 @@ namespace Minerals
                 return false;
             }
 
-            if (MineralsMain.Settings.includeFictionalSetting == false)
+            if (MineralsMod.Settings.includeFictionalSetting == false)
             {
                 return false;
             }
@@ -43,8 +43,6 @@ namespace Minerals
             //return base.TryExecuteWorker(parms);
             return true;
         }
-
-
     }
 
 

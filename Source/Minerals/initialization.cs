@@ -6,6 +6,7 @@ using System.Text;
 using UnityEngine;   // Always needed
 using RimWorld;      // RimWorld specific functions 
 using Verse;         // RimWorld universal objects 
+using Minerals.Core;
 
 namespace Minerals
 {
@@ -15,7 +16,7 @@ namespace Minerals
         public static void initRocks(Map map)
         {
             // Remove starting chunks
-            if (MineralsMain.Settings.removeStartingChunksSetting)
+            if (MineralsMod.Settings.removeStartingChunksSetting)
             {
                 removeStartingChunks(map);
             }

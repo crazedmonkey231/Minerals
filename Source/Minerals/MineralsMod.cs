@@ -9,11 +9,11 @@ using Verse;
 
 namespace Minerals
 {
-    class MineralsMain : Mod
+    class MineralsMod : Mod
     {
         public static MineralsSettings Settings;
 
-        public MineralsMain(ModContentPack content) : base(content)
+        public MineralsMod(ModContentPack content) : base(content)
         {
             Settings = GetSettings<MineralsSettings>();
         }
