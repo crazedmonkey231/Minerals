@@ -13,21 +13,19 @@ namespace Minerals.Core
     {
         // The number of days it takes to grow at max growth speed
         public float growDays = 100f;
-
-
         public float minReproductionSize = 0.8f;
         public float reproduceProp = 0.001f;
         public float deathProb = 0.001f;
         public float spawnProb = 0.0001f; // chance of spawning de novo each tick
-        public TemperatureGrowthRateModifier tempGrowthRateModifer;  // Temperature effects on growth rate
-        public RainGrowthRateModifier rainGrowthRateModifer;  // Rain effects on growth rate
-        public LightGrowthRateModifier lightGrowthRateModifer; // Light effects on growth rate
-        public FertilityGrowthRateModifier fertGrowthRateModifer;  // Fertility effects on growth rate
-        public DistanceGrowthRateModifier distGrowthRateModifer;  // Distance to needed terrain effects on growth rate
-        public SizeGrowthRateModifier sizeGrowthRateModifer;  // Current size effects on growth rate
         public bool fastGraphicRefresh = false; // If true, the graphics are regenerated more often
         public int minSpawnClusterSize = 1; // The minimum number of crystals in clusters that are spawned during gameplay, not map creation
         public int maxSpawnClusterSize = 1; // The maximum number of crystals in clusters that are spawned during gameplay, not map creation
+        protected TemperatureGrowthRateModifier tempGrowthRateModifer;  // Temperature effects on growth rate
+        protected RainGrowthRateModifier rainGrowthRateModifer;  // Rain effects on growth rate
+        protected LightGrowthRateModifier lightGrowthRateModifer; // Light effects on growth rate
+        protected FertilityGrowthRateModifier fertGrowthRateModifer;  // Fertility effects on growth rate
+        protected DistanceGrowthRateModifier distGrowthRateModifer;  // Distance to needed terrain effects on growth rate
+        protected SizeGrowthRateModifier sizeGrowthRateModifer;  // Current size effects on growth rate
 
 
         public List<GrowthRateModifier> allRateModifiers

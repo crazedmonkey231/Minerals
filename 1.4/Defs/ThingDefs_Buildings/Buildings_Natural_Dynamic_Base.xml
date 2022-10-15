@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef Class="Minerals.Core.ThingDef_DynamicMineral" Name="DynamicMineralBase" ParentName="StaticMineralBaseProps" Abstract="True">
+        <thingClass>Minerals.Core.DynamicMineral</thingClass>
+        <category>Building</category>
+        <selectable>true</selectable>
+        <altitudeLayer>LowPlant</altitudeLayer>
+        <castEdgeShadows>false</castEdgeShadows>
+        <fillPercent>0.05</fillPercent>
+        <coversFloor>false</coversFloor>
+        <pathCost>60</pathCost>
+        <mineable>true</mineable>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <filthLeaving>Filth_RubbleRock</filthLeaving>
+        <drawerType>MapMeshOnly</drawerType>
+        <tickerType>Long</tickerType>
+        <building>
+            <isInert>false</isInert>
+            <mineableThing>Filth_RubbleRock</mineableThing>
+            <mineableYield>1</mineableYield>
+        </building>
+    </ThingDef>
+    <ThingDef Class="Minerals.Core.ThingDef_DynamicMineral" Name="DynamicMineralBaseProps" ParentName="DynamicMineralBase" Abstract="True">
+        <!-- The number of days it takes to grow at max growth speed -->
+		<growDays>100</growDays>
+		<minReproductionSize>0.8</minReproductionSize>
+        <reproduceProp>0.001</reproduceProp>
+        <deathProb>0.001</deathProb>
+		<!-- Chance of spawning de novo each tick -->
+        <spawnProb>0.0001</spawnProb>
+        <!-- The minimum number of crystals in clusters that are spawned during gameplay, not map creation -->
+        <minSpawnClusterSize>1</minSpawnClusterSize>
+        <!-- The maximum number of crystals in clusters that are spawned during gameplay, not map creation -->
+        <maxSpawnClusterSize>1</maxSpawnClusterSize>
+        <!-- If true, the graphics are regenerated more often -->
+        <fastGraphicRefresh>true</fastGraphicRefresh>
+		<!-- Temperature effects on growth rate -->
+		<tempGrowthRateModifer />
+		<!-- Rain effects on growth rate -->
+		<rainGrowthRateModifer />
+		<!-- Light effects on growth rate -->
+		<lightGrowthRateModifer />
+		<!-- Fertility effects on growth rate -->
+		<fertGrowthRateModifer />
+		<!-- Distance to needed terrain effects on growth rate -->
+		<distGrowthRateModifer />
+		<!-- sizeGrowthRateModifer -->
+		<sizeGrowthRateModifer />
+    </ThingDef>
+</Defs>
