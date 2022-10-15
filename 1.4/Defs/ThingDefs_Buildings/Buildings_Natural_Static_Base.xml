@@ -18,7 +18,7 @@
                 <enabled>false</enabled>
             </damageData>
         </graphicData>
-		<building>
+        <building>
             <isResourceRock>true</isResourceRock>
             <mineableThing>RoughGem</mineableThing>
             <mineableDropChance>0.001</mineableDropChance>
@@ -28,10 +28,10 @@
             <isEdifice>true</isEdifice>
         </building>
     </ThingDef>
-	<ThingDef Class="Minerals.Core.ThingDef_StaticMineral" Name="StaticMineralBaseProps" ParentName="MineralBase" Abstract="True">
-	    <!-- The number of days it takes to grow at max growth speed -->
-		<growDays>20</growDays>
-		<topVerticesAltitudeBias>0.01</topVerticesAltitudeBias>
+    <ThingDef Class="Minerals.Core.ThingDef_StaticMineral" Name="StaticMineralBaseProps" ParentName="MineralBase" Abstract="True">
+        <!-- The number of days it takes to grow at max growth speed -->
+        <growDays>20</growDays>
+        <topVerticesAltitudeBias>0.01</topVerticesAltitudeBias>
         <!--How far away it can spawn from an existing location-->
         <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
         <spawnRadius>2</spawnRadius>
@@ -58,10 +58,10 @@
         <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
         <!-- If true, growth rate and initial size depends on distance from needed terrains -->
         <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
-		<!-- Controls how extra clusters are added near assocaited ore-->
-		<associatedOres />
-		<!-- Other resources it might drop -->
-		<randomlyDropResources />
+        <!-- Controls how extra clusters are added near assocaited ore-->
+        <associatedOres />
+        <!-- Other resources it might drop -->
+        <randomlyDropResources />
         <!-- Roof requirements -->
         <mustBeUnderRoof>true</mustBeUnderRoof>
         <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -91,7 +91,7 @@
         <otherSettlementMiningRadius>3</otherSettlementMiningRadius>
         <!--  If the mean size of minerals spawned at map generation is scaled by the relative abundance in that map -->
         <sizeScaledByAbundance>false</sizeScaledByAbundance>
-		<!-- If graphic overlapping with nearby wall textures are rotated -->
-		<growsUpWalls>true</growsUpWalls>
-	</ThingDef>
+        <!-- If graphic overlapping with nearby wall textures are rotated -->
+        <growsUpWalls>true</growsUpWalls>
+    </ThingDef>
 </Defs>

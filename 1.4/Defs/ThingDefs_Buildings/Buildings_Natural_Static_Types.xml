@@ -1,24 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
     <ThingDef Class="Minerals.Core.ThingDef_StaticMineral" Name="StaticMineralBasic" ParentName="StaticMineralBaseProps" Abstract="True">
         <graphicData>
             <texPath>Things/Mineral/Basic</texPath>
         </graphicData>
-		<uiIconPath>Things/Mineral/Basic/BasicA</uiIconPath>
+        <uiIconPath>Things/Mineral/Basic/BasicA</uiIconPath>
     </ThingDef>
-	
     <ThingDef Class="Minerals.Core.ThingDef_StaticMineral" Name="StaticMineralBasicMedium" ParentName="StaticMineralBaseProps" Abstract="True">
         <graphicData>
             <texPath>Things/Mineral/BasicMedium</texPath>
         </graphicData>
-		<uiIconPath>Things/Mineral/BasicMedium/BasicMediumA</uiIconPath>
+        <uiIconPath>Things/Mineral/BasicMedium/BasicMediumA</uiIconPath>
     </ThingDef>
-	
     <ThingDef Class="Minerals.Core.ThingDef_StaticMineral" Name="StaticMineralBasicLarge" ParentName="StaticMineralBaseProps" Abstract="True">
         <graphicData>
             <texPath>Things/Mineral/BasicLarge</texPath>
         </graphicData>
     </ThingDef>
-	<uiIconPath>Things/Mineral/BasicLarge/BasicLargeA</uiIconPath>
+    <uiIconPath>Things/Mineral/BasicLarge/BasicLargeA</uiIconPath>
 </Defs>
