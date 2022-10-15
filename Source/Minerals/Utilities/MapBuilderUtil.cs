@@ -8,17 +8,17 @@ using RimWorld;      // RimWorld specific functions
 using Verse;         // RimWorld universal objects 
 using Minerals.Core;
 
-namespace Minerals
+namespace Minerals.Utilities
 {
-    public static class mapBuilder
+    public static class MapBuilderUtil
     {
 
-        public static void initRocks(Map map)
+        public static void InitRocks(Map map)
         {
             // Remove starting chunks
             if (MineralsMod.Settings.removeStartingChunksSetting)
             {
-                removeStartingChunks(map);
+                RemoveMapChunks(map);
             }
 
             List<string> spawned =  new List<string>();
@@ -63,7 +63,7 @@ namespace Minerals
             }
         }
 
-        public static void initIce(Map map)
+        public static void IceCreation(Map map)
         {
             foreach (ThingDef_StaticMineral mineralType in DefDatabase<ThingDef_StaticMineral>.AllDefs)
             {
@@ -76,7 +76,7 @@ namespace Minerals
         }
 
 
-        public static void removeStartingChunks(Map map)
+        public static void RemoveMapChunks(Map map)
         {
             string[] toRemove = {"ChunkSandstone", "ChunkGranite", "ChunkLimestone", "ChunkSlate", "ChunkMarble", "ZF_ChunkBasalt", "ChunkClaystone", "Filth_RubbleRock", "AB_ChunkCragstone", "AB_ChunkMudstone", "AB_ChunkObsidian", "GU_ChunkRoseQuartz", "AB_ChunkSlimeStone", "ZF_ChunkMudstone"};
             List<Thing> thingsToCheck = map.listerThings.AllThings;

@@ -433,13 +433,10 @@ namespace Minerals.Core
                     }
                 }
             }
-
             return output;
         }
 
         // ======= Spawning individuals ======= //
-
-
         public virtual StaticMineral TrySpawnAt(IntVec3 dest, Map map, float size)
         {
             if (CanSpawnAt(map, dest))
@@ -469,11 +466,7 @@ namespace Minerals.Core
             return output;
         }
 
-
         // ======= Reproduction ======= //
-
-
-
         public virtual bool TryFindReproductionDestination(Map map, IntVec3 position, out IntVec3 foundCell)
         {
             if ((!position.InBounds(map)) || position.DistanceToEdge(map) <= Mathf.CeilToInt(spawnRadius))
@@ -536,15 +529,7 @@ namespace Minerals.Core
             return true;
         }
 
-
-
-
-
-
-
         // ======= Map initialization ======= //
-
-
         public virtual void InitNewMap(Map map, float scaling = 1)
         {
             //Log.Message("Minerals: Initializing mineral '" + this.defName + "' with scaling of " + scaling);

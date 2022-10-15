@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using Minerals.Core;
+using Minerals.Utilities;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -34,12 +35,12 @@ namespace Minerals.MineralPatches
 
         public static void initNewMapRocks(GenStep_RockChunks __instance, Map map)
         {
-            mapBuilder.initRocks(map);
+            MapBuilderUtil.InitRocks(map);
         }
 
         public static void initNewMapIce(GenStep_RockChunks __instance, Map map)
         {
-            mapBuilder.initIce(map);
+            MapBuilderUtil.IceCreation(map);
         }
 
         [HarmonyPatch(typeof(SkyfallerMaker))]
